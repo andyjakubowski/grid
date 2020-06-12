@@ -1,0 +1,41 @@
+:root {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  background-color: thistle;
+}
+
+body {
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  margin: 0;
+  background-color: white;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+}
+
+main {
+}
+
+aside {
+}
+
+@media screen and (min-width: 30em) {
+  body {
+    grid-column-start: 2;
+    grid-column-end: 8;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  body {
+    grid-column-start: 3;
+    grid-column-end: 7;
+  }
+}
