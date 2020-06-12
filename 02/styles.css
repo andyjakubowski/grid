@@ -1,0 +1,42 @@
+:root {
+  background-color: thistle;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto 1fr auto;
+  gap: 2vw;
+  margin: 0;
+  padding: 80px;
+  background-color: white;
+}
+
+img {
+  width: 100%;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-self: end;
+}
+
+header {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+main {
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+aside {
+  font-style: italic;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
