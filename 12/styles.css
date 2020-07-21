@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Concourse';
+  src: url('../fonts/concourse_t3_regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  font-size: 125%;
+
+  --color-purple: #37303d;
+  --color-orange: #ef603b;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  color: var(--color-orange);
+  background-color: var(--color-purple);
+
+  font: 1rem / 1.4 'Concourse', sans-serif;
+}
+
+.container {
+  padding: 3em 5vw;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 16px;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 540px;
+
+  grid-column: 1 / -1;
+  
+  background-color: hsla(0, 0%, 100%, 0.03);
+}
+
+/* 656 px */
+@media screen and (min-width: 41em) {
+  /* body {
+    gap: 32px;
+  }
+
+  main {
+    grid-column: 2 / -2;
+  }
+} */
+
+/* 912 px */
+/* @media screen and (min-width: 57em) { */
+  /* body {
+    padding: 11vw;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  main {
+    grid-column: 4 / -4;
+  }
+} */
+
+/* 1456 px */
+/* @media screen and (min-width: 90em) {
+  :root {
+    font-size: 150%;
+  }
+
+  body {
+    gap: 40px;
+  }
+} */
+
+/* 1728 px */
+/* @media screen and (min-width: 108em) {
+  main {
+    grid-column: 5 / -5;
+  }
+} */
+
+/* Positioning */
+/* Display */
+/* Colors */
+/* Type */
+/* Other */
