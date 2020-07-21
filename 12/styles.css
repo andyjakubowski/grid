@@ -35,13 +35,13 @@ body {
   max-width: 540px;
 
   grid-column: 1 / -1;
-  
+
   background-color: hsla(0, 0%, 100%, 0.03);
 }
 
 /* 656 px */
-@media screen and (min-width: 41em) {
-  /* body {
+/* @media screen and (min-width: 41em) { */
+/* body {
     gap: 32px;
   }
 
@@ -52,7 +52,7 @@ body {
 
 /* 912 px */
 /* @media screen and (min-width: 57em) { */
-  /* body {
+/* body {
     padding: 11vw;
     grid-template-columns: repeat(12, 1fr);
   }
