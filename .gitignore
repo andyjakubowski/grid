@@ -1,3 +1,4 @@
 *.code-workspace
 /sketch
 /node_modules
+/fonts

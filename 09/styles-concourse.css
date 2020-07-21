@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Concourse T3 Regular';
+  src: url('/fonts/concourse_t3_regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Concourse T3 Bold';
+  src: url('/fonts/concourse_t3_bold.woff') format('woff');
+}
+
+:root {
+  font-size: 125%;
+  --ratio: 1.414;
+  --scale-base: 1rem;
+  --scale-neg-1: calc(var(--scale-base) / var(--ratio));
+  --scale-neg-2: calc(var(--scale-neg-1) / var(--ratio));
+  --scale-1: calc(var(--scale-base) * var(--ratio));
+  --scale-2: calc(var(--scale-1) * var(--ratio));
+  --scale-3: calc(var(--scale-2) * var(--ratio));
+  --scale-4: calc(var(--scale-3) * var(--ratio));
+  --scale-5: calc(var(--scale-4) * var(--ratio));
+  --scale-6: calc(var(--scale-5) * var(--ratio));
+}
+
+body {
+  margin: 0;
+  padding-block-start: 5em;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 35.625vw 1fr;
+  gap: 3vw;
+  transform: rotate(5deg);
+
+  font-family: 'Concourse T3 Regular', serif;
+}
+
+p {
+  /* line-height: 1.2; */
+}
+
+img {
+  width: 35.625vw;
+  float: right;
+  shape-outside: circle(50%);
+  margin-inline-start: 2vw;
+  margin-block-end: 2vw;
+}
+
+header {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+header h1 {
+  font-size: var(--scale-4);
+  font-family: 'Concourse T3 Bold', serif;
+  text-align: end;
+  line-height: 0.9;
+  margin: 0;
+}
+
+h3 {
+  font-size: var(--scale-2);
+  font-family: 'Concourse T3 Bold', serif;
+}
+
+h4 {
+  font-size: var(--scale-1);
+  font-family: 'Concourse T3 Bold', serif;
+}
+
+main {
+  grid-column: 3 / span 5;
+  grid-row: 1 / span 2;
+}
+
+main > *:not(img) {
+  padding-inline-end: 22.75vw;
+}
+
+.standfirst {
+  font-size: 1.2em;
+  line-height: 1.3;
+  font-style: italic;
+}
+
+aside {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr;
+  gap: 2vw;
+}
+
+aside p {
+  font-style: italic;
+  grid-row: 1 / span 2;
+}
+
+aside section {
+  background-color: seashell;
+  padding: 1em;
+  grid-row: 1 / span 1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
